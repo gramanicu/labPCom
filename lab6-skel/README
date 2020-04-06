@@ -1,0 +1,12 @@
+Clientul incarca fisierul si il trimite (pe bucati, daca este nevoie),
+iar serverul primeste datele si le scrie in fisier. Deoarece rulez
+programele pe aceeasi masina, pot incetini clientul cu un sleep de o
+durata foarte mica pentru a ma asigura ca toate datele sunt primite.
+
+Daca am vrea sa ne asiguram de acelasi lucru, dar in cazul in care
+severul functioneaza pe un dispozitiv cu mult mai incet, cel mai bun
+lucru pe care il putem face e sa renuntam la UDP si sa implementam
+o conexiune TCP, care include mecanismele necesare ("numerotarea
+pachetelor", verificare si retransmisie a datelor, etc.)
+
+Grama Nicolae, 322CA

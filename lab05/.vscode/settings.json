@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "ip.h": "c",
+        "if_packet.h": "c"
+    }
+}

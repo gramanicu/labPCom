@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "skel.h": "c",
+        "if.h": "c",
+        "string.h": "c",
+        "ip.h": "c",
+        "inet.h": "c",
+        "socket.h": "c"
+    }
+}

@@ -1,0 +1,3 @@
+# Laborator 07 - TCP
+
+Toata aplicatia functioneaza. Am facut o mica modificare la server (echo mode), si anume: trimite un mesaj clientului imediat dupa conexiune (deoarece clientul asteapta acest mesaj, pentru a stii ce client este in chat). Printez cateva mesaje in plus pentru a fi mai usor de utilizat aplicatiile, si un timeout la client connect - incearca sa se conecteze timp de 10 secunde (pana serverul este pornit si ii accepta conexiunea).
