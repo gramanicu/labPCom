@@ -110,18 +110,18 @@ int main(int argc, char *argv[])
 						FD_CLR(i, &read_fds);
 					} else {
 						if(isdigit(buffer[0])) {
-							int target = buffer[0];
+							int target = buffer[0] - 48;
 							// Check if the client exists
 							for(int client = 0; client < clientCount; client++) {
 								if(clientList[client] == target) {
 									send(target, buffer, strlen(buffer), 0);
 								}
 							}
-						}
-
-						for(int client = 0; client < clientCount; client++) {
-							if(clientList[client] != i && clientList[client] != -1) {
-								send(clientList[client], buffer, strlen(buffer), 0);
+						} else {
+							for(int client = 0; client < clientCount; client++) {
+								if(clientList[client] != i && clientList[client] != -1) {
+									send(clientList[client], buffer, strlen(buffer), 0);
+								}
 							}
 						}
 					}

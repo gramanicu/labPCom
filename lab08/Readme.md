@@ -1,0 +1,3 @@
+# Laborator 08 - TCP si Multiplexare I/O
+
+Am rezolvat cele trei exercitii. Nu este un program perfectionat, dar face ce se cerea. Serverul accepta conexiuni pentru maxim 5 clienti (cum era definit in helpers.h), iar clientul selecteaza intre file descriptorul de stdin sau cel al socketului, pentru a putea sa si trimita, dar sa si primeasca mesaje (nu ca la laboratorul precedent, cand trebuia sa ii spuna serverul ce sa faca mai intai, si fiecare client trimitea un mesaj si astepta un raspuns). Atunci cand clientul incepe un mesaj cu o cifra, serverul incearca sa trimita mesajul doar la clientul cu acelasi numar. Daca nu exista un client conectat (sau mesajul nu incepe cu o cifra), el este trimis ca broadcast.

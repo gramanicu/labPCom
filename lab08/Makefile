@@ -5,7 +5,7 @@
 CFLAGS = -Wall -g
 
 # Portul pe care asculta serverul (de completat)
-PORT = 8004
+PORT = 8013
 
 # Adresa IP a serverului (de completat)
 IP_SERVER = 127.0.0.1
