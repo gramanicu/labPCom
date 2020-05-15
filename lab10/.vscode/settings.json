@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "helpers.h": "c"
+        "helpers.h": "c",
+        "unistd.h": "c"
     }
 }

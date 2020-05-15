@@ -70,6 +70,8 @@ int main(int argc, char *argv[])
         0
     );
     
+    printf("------------------- \n%s\n ----------\n", message);
+
     send_to_server(sockfd, message);
     response = receive_from_server(sockfd);
     printf("%s\n", response);

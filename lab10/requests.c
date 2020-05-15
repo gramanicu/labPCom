@@ -44,6 +44,7 @@ char *compute_get_request(char *host, char *url, char *query_params,
     }
     // Step 4: add final new line
     compute_message(message, "");
+    printf("\n ------------- \n%s\n -------------- \n", message);
     return message;
 }
 
@@ -100,5 +101,6 @@ char *compute_post_request(char *host, char *url, char* content_type, char **bod
     compute_message(message, body_data_buffer);
 
     free(line);
+    printf("\n ------------- \n%s\n -------------- \n", message);
     return message;
 }
